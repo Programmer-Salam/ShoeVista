@@ -7,7 +7,6 @@ import Home from "./pages/Home.jsx";
 import Men from "./pages/Men.jsx";
 import Women from "./pages/Women.jsx";
 import Kids from "./pages/Kids.jsx";
-import About from "./components/About.jsx";
 import ProductDetails from "./components/ProductDetails.jsx";
 import SearchResults from "./components/SearchResults.jsx";
 import Cart from "./pages/Cart.jsx";
@@ -18,6 +17,7 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Login from "./pages/Login.jsx";
 import SignUp from "./pages/SignUp.jsx";
+import About from "./pages/About.jsx";
 
 const router = createBrowserRouter([
   {
@@ -35,7 +35,7 @@ const router = createBrowserRouter([
       { path: '/shoes/kids', element: <Kids /> },
       { path: '/product-details/:id', element: <ProductDetails /> },
       { path: '/search/:search', element: <SearchResults /> },
-
+      { path: '/about', element: <About /> },
     ]
   },
 ]);
